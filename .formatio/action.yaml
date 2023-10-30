@@ -1,0 +1,26 @@
+name: Express App Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    steps:
+      - name: Install nodejs
+        run: sudo apk add --update nodejs npm
+
+      - name: Install depenendencies
+        run: cd ~/code/ && npm install
+
+      - name: Install pm2
+        run: npm install pm2@latest -g
+
+  deploy:
+    steps:
+      - name: Start App with pm2
+        run: cd ~/code/ && pm2 start main.js
+
+      - name: Save pm2 config
+        run: pm2 save
