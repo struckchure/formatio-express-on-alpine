@@ -1,4 +1,4 @@
-name: Express App Deployment
+name: Express App CI
 
 on:
   push:
