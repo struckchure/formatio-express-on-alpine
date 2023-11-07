@@ -1,3 +1,3 @@
 # express-yada-yada
 
-lorem and ipsum
+lorem ipsum
