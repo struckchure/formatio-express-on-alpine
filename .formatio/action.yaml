@@ -20,7 +20,7 @@ jobs:
   deploy:
     steps:
       - name: Start App with pm2
-        run: cd ~/code/ && pm2 start main.js
+        run: pm2 delete "express-app" || true && pm2 start main.js --name "express-app"
 
       - name: Save pm2 config
         run: pm2 save
