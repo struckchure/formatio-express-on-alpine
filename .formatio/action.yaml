@@ -15,7 +15,7 @@ jobs:
         run: cd ~/code/ && npm install
 
       - name: Install pm2
-        run: sudo npk install pm2@latest -g
+        run: sudo npm install pm2@latest -g
 
   deploy:
     steps:
