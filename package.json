@@ -1,5 +1,5 @@
 {
-  "name": "expressjs_app",
+  "name": "formatio-express-on-alpine",
   "version": "1.0.0",
   "main": "main.js",
   "license": "MIT",
