@@ -18,6 +18,7 @@ app.get("/", (_req, res) => {
   res.json({
     app: "expressjs",
     datetime: formattedDate,
+    tags: ["dev", "prod"]
   });
 });
 
